@@ -3,10 +3,18 @@
   "version": "0.1",
   "manifest_version": 2,
   "description": "Collaborate on Guardian crosswords in your browser",
-  "browser_action": {
-    "default_icon": "icon.png"
+  "background" : {
+    "scripts": ["background.js"]
   },
-  "permissions": [
-    "http://guardian.com/"
+  "page_action": {
+    "default_icon": "icon.png",
+    "default_title": "Collaborate!"
+  },
+  "content_scripts" : [
+    {
+      "matches" : ["http://*.guardian.co.uk/*"],
+      "js" : ["enable.js"],
+      "run_at" : "document_idle"
+    }
   ]
 }
