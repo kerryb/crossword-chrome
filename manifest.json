@@ -1,0 +1,12 @@
+{
+  "name": "Guardian crossword collaborator",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Collaborate on Guardian crosswords in your browser",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "http://guardian.com/"
+  ]
+}
