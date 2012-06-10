@@ -14,7 +14,7 @@
   "content_scripts" : [
     {
       "matches" : ["http://*.guardian.co.uk/*"],
-      "js" : ["enable.js"],
+      "js" : ["jquery-1.7.2.min.js", "page.js", "enable.js"],
       "run_at" : "document_idle"
     }
   ]

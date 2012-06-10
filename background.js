@@ -12,8 +12,7 @@ function enable(tab) {
 }
 
 function cleanPage() {
-  chrome.tabs.executeScript(null, {file: "jquery-1.7.2.min.js"});
-  chrome.tabs.executeScript(null, {file: "alterPage.js"});
+  chrome.tabs.executeScript(null, { code: "setupPage();" });
 }
 
 chrome.extension.onRequest.addListener(onRequest);
