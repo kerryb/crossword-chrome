@@ -3,7 +3,7 @@
   "version": "0.1",
   "manifest_version": 2,
   "description": "Collaborate on Guardian crosswords in your browser",
-  "permissions": ["tabs", "http://*.guardian.co.uk/*"],
+  "permissions": ["tabs", "http://*.guardian.co.uk/*", "http://cruciverbalist.herokuapp.com/*"],
   "background" : {
     "scripts": ["jquery-1.7.2.min.js", "background.js"]
   },
